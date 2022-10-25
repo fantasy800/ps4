@@ -1,0 +1,55 @@
+<html manifest="900.cache">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewprt" content="width=device-width, initail-scale=1.0">
+    <meta name="author" content="youssef mo7amd">
+    <meta name="description" content="this is my project I was happy">
+    <link rel="icon" href="logo.png" />
+  <title>FANTASY PS4 HOST 9.00 BY YOUSSEF MOHAMED</title>
+  <link rel="shortcut icon" href="logo.png"></link>
+  <body>
+  <header>مرحبا بكم فى صفحه هكر مركز فانتازى </header>
+<style>
+@keyframes example {
+    0%   {background-color: rgb(68, 0, 255);}
+    25%  {background-color: rgb(255, 0, 0);}
+    75%  {background-color: rgb(3, 136, 136);}
+    100% {background-color: rgb(5, 5, 0);}
+}
+header:hover {animation-play-state:paused
+}
+  header{
+    animation-play-state: running;
+
+    border-radius: 59px;
+    border-style:solid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-iteration-count:infinite;
+  animation-duration: 15s;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+body{background-image:url("fantasy.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size:980px;
+background-color: rgb(44, 43, 49);
+color:white;font: size 39px;text-align:center;margin:0;overflow:hidden;}
+.info{position:relative;top:39%;}
+</style>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Installing Offline Cache ... " + Percent + "%"};
+function DisplayCacheProgress(){
+setTimeout(function(){msgs.innerHTML="Cache Installed Successfully";},2000);
+setTimeout(function(){location.reload();},3000);
+}
+window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+</head>
+<body style=overflow:hidden>
+<div id=msgs class=info style='-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></div>
+</body>
+</html>
